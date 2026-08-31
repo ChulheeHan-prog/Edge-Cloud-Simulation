@@ -1,4 +1,6 @@
 import random
+print("GitHub history test")
+
 print("=== Edge vs Cloud Simulation ===")
 
 def simulate():
