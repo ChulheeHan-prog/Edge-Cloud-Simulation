@@ -6,6 +6,7 @@ Python + SimPy 기반 Edge/Cloud Computing simulation
 Edge와 Cloud 환경에서 task offloading 성능을 비교한다.
 
 ## 주요 변수
+
 ### 독립변수
 - RTT
 - Bandwidth
@@ -14,7 +15,8 @@ Edge와 Cloud 환경에서 task offloading 성능을 비교한다.
 - Cloud CPU Utilization
 - Workload
 - Data Size
-###종속변수
+
+### 종속변수
 - application latency
 - throughput
 
