@@ -1,6 +1,8 @@
 import random
+print("=== Edge vs Cloud Simulation ===")
 
 def simulate():
+    
     edge_latency = random.uniform(10, 30)
     cloud_latency = random.uniform(50, 100)
 
