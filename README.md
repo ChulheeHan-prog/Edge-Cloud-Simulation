@@ -26,3 +26,28 @@ Edge와 Cloud 환경에서 task offloading 성능을 비교한다.
 - EdgeServer
 - CloudServer
 - Task
+
+## 연구모형
+                    Battlefield State
+                          │
+            ┌─────────────┼─────────────┐
+            ↓             ↓             ↓
+        Mission        Network       Computing
+         State           State          State
+            │             │              │
+            └─────────────┼──────────────┘
+                          ↓
+                    AI Task 생성
+                          ↓
+                 Processing Time
+                     Prediction
+                          ↓
+                 Edge–Cloud Decision
+                     ↙         ↘
+                  EDGE         CLOUD
+                     ↘         ↙
+                       ↓
+              Information Timeliness
+                       ↓
+             Command Decision
+                Timeliness
