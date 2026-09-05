@@ -7,7 +7,47 @@ Edge와 Cloud 환경에서 task offloading 성능을 비교한다.
 
 ## 주요 변수
 
-- Network latency
-- Processing time
-- Task arrival rate
-- Edge server capacity
+### 독립변수
+- RTT
+- Bandwidth
+- Packet Loss
+- Edge CPU Utilization
+- Cloud CPU Utilization
+- Workload
+- Data Size
+
+### 종속변수
+- application latency
+- throughput
+
+## 클래스
+
+- Network
+- EdgeServer
+- CloudServer
+- Task
+
+## 연구모형
+                    Battlefield State
+                          │
+            ┌─────────────┼─────────────┐
+            ↓             ↓             ↓
+        Mission        Network       Computing
+         State           State          State
+            │             │              │
+            └─────────────┼──────────────┘
+                          ↓
+                    AI Task 생성
+                          ↓
+                 Processing Time
+                     Prediction
+                          ↓
+                 Edge–Cloud Decision
+                     ↙         ↘
+                  EDGE         CLOUD
+                     ↘         ↙
+                       ↓
+              Information Timeliness
+                       ↓
+             Command Decision
+                Timeliness
